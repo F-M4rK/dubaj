@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark.html</title>
     <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
         body {
-            background-color: rgb(243, 237, 201);
+            background: url(http://cms.boonedam.com/en/azure-blob/public/2021-03/Inspiration%20Project_Burj%20Khalifa_Main%20Pic_2880%20x%201620px.jpg);
+            
         }
         #tarolo {
             max-width: 100%;
             height: 500px;
-            background-color: rgb(212, 191, 191);
+            background-color: blanchedalmond;
+            position: relative;
+            top: -10px;
         }
         main {
             background-color: brown;
@@ -31,12 +40,83 @@
             border-radius: 20px;
             position: relative;
             top: 15%;
+            left: 200%;
         }
+        nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(136, 214, 238);
+    z-index: 1;
+}
 
+.logo {
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.hova {
+    color: black;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 2px;
+    border-style: none;
+    height: 150%;
+}
+
+.pici {
+    width: 50%;
+}
+
+.kicsikep{
+    height: 20px;
+    margin: 0;
+}
 
     </style>
 </head>
+
 <body>
+    <nav class="navbar">
+        <h2 class="logo">Pofi Travel Utazási Iroda (Dubai)</h2>
+        <ul class="hova">
+            <li>
+                <label>Indulás: <br>
+                    <input type="text" size="30" maxlength="30" name="nev" placeholder="Budapest"></label> <br>
+            </li>
+            
+              <li>
+                <label>Hova utazna? <br>
+                    <input type="text" size="30" maxlength="30" name="nev" placeholder="Dubai"></label> <br>
+              </li>
+              <li>
+                <label>Mettől: <br>
+                    <input class="pici" type="text" size="30" maxlength="30" name="nev" placeholder="2023.04.15"></label> <br>
+              </li>
+              <li>
+                <label>Meddig: <br>
+                    <input class="pici" type="text" size="30" maxlength="30" name="nev" placeholder="-"></label> <br>
+              </li>
+                <a href="#"><img class="kicsikep" src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="keresés"></a>
+        </ul>
+    </nav>
+
     <div id="tarolo">
         <header>
 
@@ -48,6 +128,7 @@
                      828 méteres magasságával; több mint 300 méterrel magasabb, mint a Taipei 101
                 </p>
                 <div id="video">
+                    <img src="" alt="">
                     <iframe src="" frameborder="0"></iframe>
                 </div>
         </main>
